@@ -1,0 +1,21 @@
+import React from 'react';
+import { Card, Button } from 'react-bootstrap';
+import './styles/Footer.css';
+
+
+function Footer() {
+  return (
+    <Card className="Card">
+      <Card.Header className="cardHeader" as="h5">Designed By</Card.Header>
+      <Card.Body>
+        <Card.Title className="Title">Web site Designed by</Card.Title>
+        <Card.Text>
+          Alejandro Correa Web Design.
+        </Card.Text>
+        <Button variant="light">FlyCodeBcn.com</Button>
+      </Card.Body>
+    </Card>
+  )
+}
+
+export default Footer;
