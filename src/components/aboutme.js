@@ -1,44 +1,48 @@
 import React, { Component } from 'react';
-import { auth } from 'firebase';
+
+
+// Luego, puedes utilizar el módulo de autenticación
+
+
 
 function FancyBorder(props) {
-    return (
-      <div className={'FancyBorder FancyBorder-' + props.color}>
-        {props.children}
-      </div>
-    );
-  }
+  return (
+    <div className={'FancyBorder FancyBorder-' + props.color}>
+      {props.children}
+    </div>
+  );
+}
 
 function Dialog(props) {
+  return (
+    <FancyBorder color="blue">
+      <h1 className="Dialog-title">
+        {props.title}
+      </h1>
+      <p className="Dialog-message">
+        {props.message}
+      </p>
+      {props.children}
+    </FancyBorder>
+  );
+}
+
+class Aboutme extends Component {
+
+
+
+  render() {
+    const style = {
+
+      margin: 'auto',
+    }
     return (
-      <FancyBorder color="blue">
-        <h1 className="Dialog-title">
-          {props.title}
-        </h1>
-        <p className="Dialog-message">
-          {props.message}
-        </p>
-        {props.children}
-      </FancyBorder>
-    );
-  }
 
-class Aboutme extends Component{
-  
-   
-
-    render(){
-      const style = {
-        
-        margin: 'auto',
-      }
-        return(
-          
-          <div id ="Aboutme"className="Section 1" >
-            <Dialog 
-                title="Sobre mí"
-                style={style}
-                message="Soy Arquitecto egresado de la Universidad de Belgrano, Argentina, con formación en retail y diseño de escaparates.
+      <div id="Aboutme" className="Section 1" >
+        <Dialog
+          title="Sobre mí"
+          style={style}
+          message="Soy Arquitecto egresado de la Universidad de Belgrano, Argentina, con formación en retail y diseño de escaparates.
                 
 
                 Trabajo en el campo profesional hace más de 9 años, sobre todo en el área de retail, realizando tareas de diseño, dirección, 
@@ -53,13 +57,13 @@ class Aboutme extends Component{
                 Mi búsqueda es constante hacia nuevos desafíos y crecimiento profesional, me ha llevado a orientarme al Diseño de tiendas y la Dirección de Obra, ya que considero tener una orientada vocación hacia la coordinación de tareas y equipos de trabajo, sin perder de vista la importancia de la calidad de entrega, los tiempos y costos de ejecución de un proyecto.
                 ">
 
-            </Dialog>
-            </div>
-            
-        );
-        
-    }
-    
+        </Dialog>
+      </div>
+
+    );
+
+  }
+
 }
 
 
