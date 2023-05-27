@@ -1,26 +1,20 @@
 import React from 'react';
-import { Nav } from 'reactstrap';
-
-
-
+import { Nav } from 'react-bootstrap';
 
 
 
 function Links() {
     return (
         <Nav>
-
-            <li class="nav-item">
-                <a class="nav-link active" href="/">Home</a>
+            <li className="nav-item">
+                <a className="nav-link active" href="/">Home</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/aboutme">About Me</a>
+            <li className="nav-item">
+                <a className="nav-link" href="/aboutme">About Me</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/works"> Works</a>
+            <li className="nav-item">
+                <a className="nav-link" href="/works"> Works</a>
             </li>
-
-
         </Nav>
     )
 }

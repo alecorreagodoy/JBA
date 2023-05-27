@@ -1,8 +1,8 @@
 import React from 'react';
-import { Nav, Navbar } from 'reactstrap';
-import * as Scroll from 'react-scroll';
-import { Link, animateScroll as scroll } from "react-scroll";
-import Lkdn from '../img/Lkdn.png';
+import { Nav, Navbar } from 'react-bootstrap';
+import Scroll from 'react-scroll';
+import { Link, Animatior } from "react-scroll-motion";
+import Lkdn from '../assets/img/Lkdn.png';
 import './styles/navbar.css';
 //import list whit links to views; 
 import Links from './links'
@@ -20,6 +20,7 @@ function Navbarr(props) {
       </a>
     ) : (<a className="nav-link " href={link.link}>{link.label}
     </a>)
+
     return (
       <Link
         activeClass="active"

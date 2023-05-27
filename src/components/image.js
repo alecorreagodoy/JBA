@@ -1,7 +1,7 @@
 import React from 'react';
-import Img1 from '../img/Img1.png';
-import MAT_4860 from '../img/MAT_4860.jpg';
-import MAT_4863 from '../img/MAT_4863.jpg';
+import Img1 from '../assets/img/Img1.png';
+import MAT_4860 from '../assets/img/MAT_4860.jpg';
+import MAT_4863 from '../assets/img/MAT_4863.jpg';
 import Carousel from 'react-bootstrap/Carousel'
 
 

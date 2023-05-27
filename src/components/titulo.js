@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbarr from './navbar';
-//import { Link, animateScroll as scroll } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import Links from './links'
 

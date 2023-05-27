@@ -6,9 +6,10 @@ import Image from './image';
 
 
 const FancyBorder = ({ color, children }) => (
-  <div className={"FancyBorder FancyBorder-" + color}>
-    {children}
-  </div>
+  //   <div className={"FancyBorder FancyBorder-" + color}>
+  //     {children}
+  //   </div>
+  <span className="square border border-dark"></span>
 );
 
 function Body(props) {
