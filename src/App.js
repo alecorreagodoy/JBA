@@ -1,22 +1,45 @@
-import React from "react"
+import React from "react";
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+import Body from "./Pages/Body";
+import Aboutme from "./Pages/aboutme";
+import Works from "./Pages/Works";
+
 import Header from "./components/header";
 import Footer from "./components/Footer";
-import Router from "../src/service/Router";
-import { Auth } from "./components/auth"
 
+import { Auth } from "./components/auth";
 import "./App.css"
 
 function App() {
   return (
-    <div>
-      <Header name="ale" color="blue" />
 
-      <Auth />
-      <Router />
+    <div className="App">
+
+      <BrowserRouter>
+        <Header />
+
+        <Link to="/" >Home</Link>
+        <nav>
+          <Link to="/aboutme">About me</Link>
+          <div>
+            <Link to="/works">Works</Link>
+          </div>
+
+        </nav>
+
+
+        <Routes>
+          <Route path='/' element={<Body />} />
+          <Route exact path='/aboutme' element={<Aboutme />} />
+          <Route exact path='/works' element={<Works />} />
+        </Routes>
+      </BrowserRouter>
       <div>
 
       </div>
-      <Footer greet="Hi" />
+      <div className="Footer">
+        <Footer />
+      </div>
     </div>
   );
 }

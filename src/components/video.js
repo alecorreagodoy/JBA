@@ -3,6 +3,9 @@ import ReactPlayer from 'react-player'
 import Video from '../assets/img/Quik_2018-08-08_21-48-14-2.mp4';
 
 class MiVideoCover {
+  state = {
+    play: false
+  }
   constructor(props) {
 
     const videoOptions = {
