@@ -1,6 +1,6 @@
 import React from 'react';
-import Image from './image';
-import CarouselComponent from './bootstrap-components/carousel'
+import Image from '../components/image';
+import '../components/styles/body.css';
 
 
 
@@ -20,7 +20,7 @@ function Body(props) {
         <div className="container" >
           <div className="home" >
             <div>
-              <CarouselComponent />
+              <Image />
             </div>
             <div className="col-12 col-md-12 title-img">
 

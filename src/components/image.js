@@ -1,5 +1,6 @@
 import React from 'react';
-import CarouselComponent from './bootstrap-components/carousel'
+import CarouselComponent from './bootstrap-components/carousel';
+import './styles/image.css'
 
 
 
@@ -8,7 +9,7 @@ function Image() {
 
   return (
     <div className="Gallery">
-      <div id="Gallery">
+      <div className="carousel" >
         <CarouselComponent />
       </div>
 

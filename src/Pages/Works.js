@@ -1,32 +1,21 @@
 import React, { useState } from 'react';
 import Card from 'react-bootstrap/Card';
-import MiVideoCover from './video';
-import './styles/Works.css';
+import MiVideoCover from '../components/video';
+import '../components/styles/Works.css';
 
 
 
 
 
-function Works(props) {
-    const [images, setImages] = useState(props.images)
+function Works() {
+
 
 
     return (
-
-
         <div className="Work container">
-            <div className="">
-
-                <div className="works ">
-                    <div className="work-title">
-                        <h2>Works</h2>
-                    </div>
-                    <div className="myVideo">
-
-                        <MiVideoCover className="video" />
-
-                    </div>
-
+            <div className="works ">
+                <h2>Works</h2>
+                <div>
                     <Card>
                         <Card.Img variant="top" src="holder.js/100px180" />
                         <Card.Body>
@@ -43,7 +32,6 @@ function Works(props) {
                             </Card.Text>
                         </Card.Body>
                     </Card>
-                    <br />
                     <Card>
                         <Card.Body>
                             <Card.Title>Starbucks Coffee Argentina</Card.Title>
@@ -67,7 +55,29 @@ function Works(props) {
                         </Card.Body>
 
                     </Card>
-                    <br></br>
+                    <Card>
+                        <Card.Body>
+                            <Card.Title>Starbucks Coffee Argentina</Card.Title>
+                            <Card.Title className="cargo">Construction Manager</Card.Title>
+                            <Card.Text>
+                                - Enero 2016 – Agosto 2018:
+                                Enero 2018 – Agosto 2018: Arquitecto - Construction Manager - Analista Sr. de Construcción
+                                Director de obra. Coordinación de las diferentes áreas involucradas en los procesos de apertura y remodelaciones de tiendas. Contratación de empresas constructoras y proveedores externos, negociando con éstos para que los costos no superen el presupuesto estipulado para dichas tareas.
+                                Control de la documentación de obra y la planilla de costos verificando que sean aptas para licitación. Gestión de los procesos licitatorios. Proyección y control del cronograma de obra en virtud de garantizar el cumplimiento de plazos.
+                                Armado del presupuesto inicial, seguimiento financiero del mismo durante el transcurso de la obra para evitar desvíos económicos. Relevamiento de cada sitio con los diversos asesores, evaluando la factibilidad del proyecto propuesto. Revisión técnica del sitio para prevenir futuros
+                                imponderables en el transcurso o finalizada la obra evitando costos, excediendo el presupuesto.
+                                Compra de insumos de obra y seguimiento del proceso de logística y recepción en obra.
+
+                            </Card.Text>
+                            <Card.Title className="cargo">Project Manager</Card.Title>
+                            <Card.Text>
+                                Enero 2016 – Diciembre 2017: Arquitecto - Project Manager - Analista Sr. de Proyectos. Responsable del análisis de cada uno de los locales que se proponen para la realización de tiendas haciendo el seguimiento de todo el proceso de diseño.Desarrollo de layouts verificando la factibilidad de la locación propuesta.
+                                Líder del proceso de diseño de tiendas: Interlocutor directo con el Starbucks Corporation Store Design Team, manteniendo una call semanal para comunicar nuevos sites, seguimiento del proceso, corrección de las diversas etapas del proceso (layout – renders – materiales – terminaciones) y control y seguimiento de fechas de entrega de dichas etapas.
+                                Responsable de verificar que en todas las obras se respete el diseño propuesto por la Corporación. Control de la documentación de obra y la planilla de costos. Contratación y seguimiento de asesores. Gestión de procesos licitatorios. Relevamiento técnico anual de todas las tiendas que cumplen 5 años o más para verificar el estado de las mismas, detectar la necesidad de una remodelación y definir la escala de la misma, pudiendo ser: menor, mayor o estructural. Seguimiento del Site Tracking Report semanal, donde se reporta a la Corporación las fechas de nuevas tiendas, tales como la fecha en que se entrega la tienda al área de Operaciones, inicio y finalización de obra y fecha de apertura, entre otras.
+                            </Card.Text>
+                        </Card.Body>
+
+                    </Card>
                     <Card>
                         <Card.Img variant="top" src="holder.js/100px180" />
                         <Card.Body>
@@ -94,7 +104,6 @@ function Works(props) {
                             </Card.Text>
                         </Card.Body>
                     </Card>
-                    <br />
                     <Card>
                         <Card.Img variant="top" src="holder.js/100px180" />
                         <Card.Body>
@@ -117,7 +126,6 @@ function Works(props) {
                             </Card.Text>
                         </Card.Body>
                     </Card>
-                    <br />
                     <Card>
                         <Card.Img variant="top" src="holder.js/100px180" />
                         <Card.Body>
@@ -141,7 +149,6 @@ function Works(props) {
                             </Card.Text>
                         </Card.Body>
                     </Card>
-
                 </div>
             </div>
         </div>

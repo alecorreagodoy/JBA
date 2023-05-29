@@ -1,6 +1,8 @@
 
 import React from 'react';
 import Titulo from './titulo';
+import Navbarr from './navbar';
+
 
 
 
@@ -11,7 +13,7 @@ function Header(props) {
     <div className="main-header">
 
       <header className="App-header">
-        <Titulo />, {props.name}, {props.color}
+        <Titulo />
 
       </header>
 
