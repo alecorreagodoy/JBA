@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   text-align: center;
-
+  background-color: rgb(248, 248, 248);
 
 }
 
@@ -47,7 +47,7 @@
 .Button button {
   width: 900px;
   color: rgb(7, 7, 7);
-  background-color: rgb(199, 195, 195);
+  background-color: rgb(248, 248, 248);
 }
 
 .Button .btn {
@@ -65,7 +65,7 @@
 .navigator {
   font-family: "SpartanMB-Thin.oft";
   font-size: 20px;
-  background-color: rgb(248, 248, 255);
+  background-color: rgb(248, 248, 248);
 
 }
 
@@ -123,7 +123,7 @@
 
 .ficha {
 
-  background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255, 255, 255, 0.50) 47%, rgba(0, 0, 0, 0.50) 100%);
+  background-image: radial-gradient(73% 147%, #eeebeb 59%, #f2eeed 100%), radial-gradient(91% 146%, rgba(255, 255, 255, 0.50) 47%, rgba(0, 0, 0, 0.50) 100%);
   background-blend-mode: screen;
   opacity: 0.90;
 

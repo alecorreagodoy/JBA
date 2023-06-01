@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Titulo from './titulo';
-import Navbarr from './navbar';
+
 
 
 

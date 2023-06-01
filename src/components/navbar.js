@@ -5,7 +5,8 @@ import { Link, Animatior } from "react-scroll-motion";
 import Lkdn from '../assets/img/Lkdn.png';
 import './styles/navbar.css';
 //import list whit links to views; 
-import Links from './links'
+import Links from './links';
+import Titulo from './titulo';
 
 
 
@@ -41,42 +42,45 @@ function Navbarr(props) {
   });
 
   return (
+    <header>
+      <div className="row">
+        <div>
 
-    <div className="row">
-      <Navbar className=" col-md-12 navigator ">
-        <Nav className="navbar-expand navbar-light ">
-
-
-          <div className="collapse navbar-collapse " id="navbarNavDropdown">
-
-            <ul className="navbar-nav">
-              {linksMarkup}
-            </ul>
-
-            <section className="perfil" id="in"> <a
-              Target="_blank"
-              title="Linkedin"
-              href="https://www.linkedin.com/in/juanballarino/"
-
-            >
-              <img
-                className="inicon"
-                src={Lkdn}
-                alt="Third slide"
-                width="20px"
-                height="20px"
-
-              />
-
-            </a>
-            </section>
+        </div>
+        <Navbar className=" col-md-12 navigator ">
+          <Nav className="navbar-expand navbar-light ">
 
 
-          </div>
-        </Nav>
-      </Navbar>
-    </div>
+            <div className="collapse navbar-collapse " id="navbarNavDropdown">
 
+              <ul className="navbar-nav">
+                {linksMarkup}
+              </ul>
+
+              <section className="perfil" id="in"> <a
+                Target="_blank"
+                title="Linkedin"
+                href="https://www.linkedin.com/in/juanballarino/"
+
+              >
+                <img
+                  className="inicon"
+                  src={Lkdn}
+                  alt="Third slide"
+                  width="20px"
+                  height="20px"
+
+                />
+
+              </a>
+              </section>
+
+
+            </div>
+          </Nav>
+        </Navbar>
+      </div>
+    </header>
 
   );
 }

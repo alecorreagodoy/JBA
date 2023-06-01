@@ -1,38 +1,26 @@
 import React from 'react';
 import Navbarr from './navbar';
-import { Link, animateScroll as scroll } from "react-scroll";
-
-import Links from './links'
 
 
 
 
 function Titulo() {
   return (
-    <div className="">
+    <div className="container">
       <div className="row">
-        <div className="col-sm-12 text-centre">
-          <div className="titulo-page">
 
-            <h1>JUAN BALLARINO</h1>
+        <div className="titulo-page">
 
+          <h1>JUAN BALLARINO</h1>
 
-            <div className="col-sm sub-title">
-              <p>ARCHITECT</p>
-            </div>
-            <hr color="black" />
-            <Navbarr links={Links} />
-
-            <hr color="black" />
+          <div className="col-sm sub-title">
+            <p>ARCHITECT</p>
           </div>
-
-
-
-
+          <hr color="black" />
+          <Navbarr />
+          <hr color="black" />
         </div>
       </div>
-
-
     </div>
   );
 }

@@ -14,6 +14,8 @@ function Body(props) {
 
   return (
     <FancyBorder color="black">
+
+
       <div id="Home" className="Body-Container">
 
 

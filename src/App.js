@@ -3,10 +3,9 @@ import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import Body from "./Pages/Body";
 import Aboutme from "./Pages/aboutme";
 import Works from "./Pages/Works";
-
-import Header from "./components/header";
 import Footer from "./components/Footer";
-
+import Navbarr from "./components/navbar";
+import Titulo from "./components/titulo";
 import { Auth } from "./components/auth";
 import "./App.css"
 
@@ -16,18 +15,9 @@ function App() {
     <div className="App">
 
       <BrowserRouter>
-        <Header />
-
-        <Link to="/" >Home</Link>
-        <nav>
-          <Link to="/aboutme">About me</Link>
-          <div>
-            <Link to="/works">Works</Link>
-          </div>
-
-        </nav>
 
 
+        <Titulo />
         <Routes>
           <Route path='/' element={<Body />} />
           <Route exact path='/aboutme' element={<Aboutme />} />
