@@ -21,6 +21,7 @@
     "react-video-cover": "^1.2.2",
     "reactstrap": "^9.1.9",
     "scrollreveal": "^4.0.9",
+    "styled-components": "^5.3.11",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

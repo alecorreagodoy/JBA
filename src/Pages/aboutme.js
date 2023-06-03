@@ -15,7 +15,7 @@ function FancyBorder(props) {
 
 function Dialog(props) {
   return (
-    <FancyBorder color="blue">
+    <FancyBorder color="gray">
       <h1 className="Dialog-title">
         {props.title}
       </h1>

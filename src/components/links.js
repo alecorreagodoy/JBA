@@ -16,6 +16,9 @@ function Links() {
             <li className="nav-item">
                 <a className="nav-link" href="/works"> Works</a>
             </li>
+            <li className="nav-item">
+                <a className="nav-link" href="/contact"> Contact me</a>
+            </li>
         </Nav>
     )
 }
