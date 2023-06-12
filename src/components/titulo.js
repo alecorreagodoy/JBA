@@ -14,7 +14,7 @@ function Titulo() {
           <h1>JUAN BALLARINO</h1>
 
           <div className="col-sm sub-title">
-            <p>ARCHITECT</p>
+            <h3>ARCHITECT </h3>
           </div>
           <hr color="black" />
           <Navbarr />

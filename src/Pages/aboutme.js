@@ -38,7 +38,7 @@ class Aboutme extends Component {
     }
     return (
 
-      <div id="Aboutme" className="Section 1" >
+      <div id="Aboutme" className="Section 1 container w3-padding-32" >
         <Dialog
           title="Sobre mí"
           style={style}

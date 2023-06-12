@@ -8,9 +8,9 @@ function Footer() {
     <div className='Footer Container'>
       <Card className="Card">
         <Card.Body>
-          <Card.Title className="Title">Web site Designed by</Card.Title>
+
           <Card.Text>
-            Alejandro Correa Web Design
+
           </Card.Text>
           <Button variant="light">FlyCodeBcn.com</Button>
         </Card.Body>

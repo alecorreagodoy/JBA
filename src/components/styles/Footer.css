@@ -10,8 +10,8 @@
 }
 
 .Card .Title {
-    background-color: rgb(248, 248, 248);
-    font-family: 'Rubik', sans-serif;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Monserrat', sans-serif;
 
 }
 
@@ -23,6 +23,8 @@
     font-family: 'Noto Sans KR', sans-serif;
     font-family: 'Arimo', sans-serif;
     font-family: 'Questrial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
 
 
     src: url("https://fonts.google.com/?selection.family=Arimo|Noto+Sans+KR|Nunito|Questrial|Rubik|Titillium+Web");
