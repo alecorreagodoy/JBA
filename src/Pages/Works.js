@@ -11,7 +11,7 @@ import JB_page0007 from '../assets/portfolio/JB_page0007.jpg';
 import JB_page0008 from '../assets/portfolio/JB_page0008.jpg';
 import JB_page0009 from '../assets/portfolio/JB_page0009.jpg';
 
-import '../components/styles/Works.css';
+
 
 
 

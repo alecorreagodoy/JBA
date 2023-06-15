@@ -6,7 +6,8 @@ const CoolTheme = {
     colors: {
         black: '#000000',
         white: '#EDEAE0',
-        gray: '#F8F8F8'
+        gray: '#F8F8F8',
+        darkGray: '#696969'
     },
     fontSizes:
     {

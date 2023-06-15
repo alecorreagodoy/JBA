@@ -11,10 +11,11 @@ import emailjs from "@emailjs/browser";
 const Box = styled.div`
 padding: 4rem;
 margin: 4rem;
-color: ${(props) => props.theme.colors.black};
+color: ${(props) => props.theme.colors.darkGray};
 font-family: ${(props) => props.theme.fonts.body}
 `
 const Title = styled.div`
+color: ${(props) => props.theme.colors.darkGray};
 font-family:${(props) => props.theme.fonts.body}
 `
 function Contact() {
@@ -38,12 +39,7 @@ function Contact() {
 
             <Theme>
                 <Title>
-                    <div className="title"
-                    /* style={{
-                        color: `${theme.colors.black}`,
-                        fontFamily: `${theme.fonts.heading}`
-                    }} */
-                    >
+                    <div className="title">
                         <h2> Contact me!</h2>
                     </div>
                 </Title>

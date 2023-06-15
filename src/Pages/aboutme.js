@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
+import { Theme } from "../components/infrastructure/theme/theme.js";
+
 
 
 // Luego, puedes utilizar el módulo de autenticación
@@ -25,7 +28,14 @@ function Dialog(props) {
       {props.children}
     </FancyBorder>
   );
-}
+};
+
+const Box = styled.div`
+padding: 4rem;
+margin: 4rem;
+color: ${(props) => props.theme.colors.darkGray};
+font-family: ${(props) => props.theme.fonts.body}
+`
 
 class Aboutme extends Component {
 
@@ -34,31 +44,44 @@ class Aboutme extends Component {
   render() {
     const style = {
 
-      margin: 'auto',
+      margin: '10',
+
     }
     return (
+      <Theme>
+        <div id="Aboutme" className="Section 1 container " >
+          <Box>
+            <Dialog
+              title="About me"
+              style={style}
+              message="
+              I am an architect graduated from the University of Belgrano, Argentina, with a background in retail and visual merchandising design. 
+              I have been working in the professional field for over 9 years, primarily in the retail sector, where I have been involved in designing, directing,
+               coordinating, and managing projects for commercial spaces. 
+               This includes calculations, budgeting, and tendering for construction projects.
+            
+               Some of the brands I have worked with include Chanel, Dior, Guerlain, Carolina Herrera, Paco Rabanne, Clinique, Tom Ford, Burberry, 
+               L'Occitane en Provence, Dolce & Gabbana, Lacoste, Hugo Boss, Gucci, Bvlgari, Tiffany & Co, Starbucks Coffee, Samsonite Black Label and Classic, 
+               Havanna, among others.
 
-      <div id="Aboutme" className="Section 1 container w3-padding-32" >
-        <Dialog
-          title="Sobre mí"
-          style={style}
-          message="Soy Arquitecto egresado de la Universidad de Belgrano, Argentina, con formación en retail y diseño de escaparates.
-                
+          The diverse range of tasks I have undertaken has provided me with experience in all aspects of the field and has allowed me to work independently and resourcefully. 
+          I have thrived under pressure, meeting tight deadlines and exceeding the expectations of demanding clients. This has honed my negotiation and conciliation skills, as well as fostered excellent interpersonal relationships. Furthermore, I have successfully led interdisciplinary teams.
+          
+          My constant pursuit of new challenges and professional growth has led me to specialize in store design and project management. 
+          I have a strong inclination towards coordinating tasks and teams, while always keeping in mind the importance of delivering high-quality results within the designated timeframes and budgets.
+          
+          I am committed to continuing my professional development and expanding my knowledge in the field of store design and project management. 
+          I am eager to contribute to exciting projects and the success of your company.
+          
+          Thank you for visiting my portfolio website and considering my experience. 
+          If you would like further information, please do not hesitate to contact me.
+          
+          ">
 
-                Trabajo en el campo profesional hace más de 9 años, sobre todo en el área de retail, realizando tareas de diseño, dirección, 
-                coordinación y gestión de obras de locales comerciales; computo, presupuesto, complementando con la licitación de las obras a ejecutar.
-                
-                Algunas marcas para las que he trabajado: Chanel, Dior, Guerlain, Carolina Herrera, Paco Rabanne, Clinique, Tom Ford, Burberry, L’Occitane en Provence, 
-                Dolce & Gabanna, Lacoste, Hugo Boss, Gucci, Bvlgari, Tiffany & co, Starbucks Coffee, Samsonite Black Label y Classic, Havanna, entre otras.
-                
-                A raíz de la diversidad de las tareas realizadas es que he adquirido experiencia en todos los campos y he aprendido a desenvolverme de manera independiente y resolutiva,
-                 trabajando bajo presión en relación a los tiempos de entrega y clientes exigentes; adquiriendo habilidades de negociación y conciliación, y muy buenas relaciones interpersonales, lo que me permitió también liderar equipos de trabajo interdisciplinarios.
-                
-                Mi búsqueda es constante hacia nuevos desafíos y crecimiento profesional, me ha llevado a orientarme al Diseño de tiendas y la Dirección de Obra, ya que considero tener una orientada vocación hacia la coordinación de tareas y equipos de trabajo, sin perder de vista la importancia de la calidad de entrega, los tiempos y costos de ejecución de un proyecto.
-                ">
-
-        </Dialog>
-      </div>
+            </Dialog>
+          </Box>
+        </div>
+      </Theme>
 
     );
 
