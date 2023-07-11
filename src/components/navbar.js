@@ -1,15 +1,23 @@
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
-import Scroll from 'react-scroll';
-import { Link, Animatior } from "react-scroll-motion";
+import { Link } from "react-scroll-motion";
 import Lkdn from '../assets/img/Lkdn.png';
-import './styles/navbar.css';
-//import list whit links to views; 
 import Links from './links';
-import Titulo from './titulo';
+import { Theme } from "./infrastructure/theme/theme.js";
+import styled from "styled-components";
+import './styles/navbar.css';
 
 
 
+const NavbarContainer = styled.nav`
+width: 100%;
+height: 60px;
+background-color:${(props) => props.theme.colors.lightGray};
+font-family:${(props) => props.theme.fonts.heading};
+display: flex;
+flex-direction: column;
+
+`;
 
 
 function Navbarr(props) {
@@ -23,6 +31,7 @@ function Navbarr(props) {
     </a>)
 
     return (
+
       <Link
         activeClass="active"
         to={link.label}
@@ -42,45 +51,47 @@ function Navbarr(props) {
   });
 
   return (
-    <header>
-      <div className="row">
-        <div>
+    <Theme>
+      <NavbarContainer>
+        <div className="row">
+          <div>
 
+          </div>
+          <Navbar className=" col-md-12 navigator ">
+            <Nav className="navbar-expand navbar-light ">
+
+
+              <div className="collapse navbar-collapse " id="navbarNavDropdown">
+
+                <ul className="navbar-nav">
+                  {linksMarkup}
+                </ul>
+
+                <section className="perfil" id="in"> <a
+                  Target="_blank"
+                  title="Linkedin"
+                  href="https://www.linkedin.com/in/juanballarino/"
+
+                >
+                  <img
+                    className="inicon"
+                    src={Lkdn}
+                    alt="Third slide"
+                    width="20px"
+                    height="20px"
+
+                  />
+
+                </a>
+                </section>
+
+
+              </div>
+            </Nav>
+          </Navbar>
         </div>
-        <Navbar className=" col-md-12 navigator ">
-          <Nav className="navbar-expand navbar-light ">
-
-
-            <div className="collapse navbar-collapse " id="navbarNavDropdown">
-
-              <ul className="navbar-nav">
-                {linksMarkup}
-              </ul>
-
-              <section className="perfil" id="in"> <a
-                Target="_blank"
-                title="Linkedin"
-                href="https://www.linkedin.com/in/juanballarino/"
-
-              >
-                <img
-                  className="inicon"
-                  src={Lkdn}
-                  alt="Third slide"
-                  width="20px"
-                  height="20px"
-
-                />
-
-              </a>
-              </section>
-
-
-            </div>
-          </Nav>
-        </Navbar>
-      </div>
-    </header>
+      </NavbarContainer>
+    </Theme>
 
   );
 }
