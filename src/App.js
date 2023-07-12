@@ -21,6 +21,7 @@ function App() {
       </React.StrictMode>
 
       <div className="Footer">
+        <Auth />
         <Footer />
       </div>
     </div>
