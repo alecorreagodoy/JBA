@@ -16,7 +16,10 @@ function App() {
 
 
     <div className="App">
-      <Router />
+      <React.StrictMode>
+        <Router />
+      </React.StrictMode>
+
       <div className="Footer">
         <Footer />
       </div>
