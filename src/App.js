@@ -16,9 +16,9 @@ function App() {
 
 
     <div className="App">
-      <React.StrictMode>
-        <Router />
-      </React.StrictMode>
+
+      <Router />
+
 
       <div className="Footer">
         <Auth />
