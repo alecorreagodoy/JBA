@@ -18,9 +18,9 @@ function Router() {
 
             <Routes>
                 <Route path='/' element={<Body />} />
-                <Route exact path='/aboutme' element={<Aboutme />} />
-                <Route exact path='/works' element={<Works />} />
-                <Route exact path='/contact' element={<Contact />} />
+                <Route path='/aboutme' element={<Aboutme />} />
+                <Route path='/works' element={<Works />} />
+                <Route path='/contact' element={<Contact />} />
             </Routes>
 
 
