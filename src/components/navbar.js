@@ -1,94 +1,66 @@
-import React from 'react';
-import { Nav, Navbar } from 'react-bootstrap';
-import { Link } from "react-scroll-motion";
+import React, { useState } from 'react';
 import Lkdn from '../assets/img/Lkdn.png';
-import Links from './links';
 import { Theme } from "./infrastructure/theme/theme.js";
-import styled from "styled-components";
-import './styles/navbar.css';
+
+import {
+  NavbarContainer,
+  LeftContainer,
+  RightContainer,
+  NavbarInnerContainer,
+  NavbarExtendedContainer,
+  NavbarLinkContainer,
+  NavbarLink,
+  LinkedinLogo,
+  OpenLinkButton,
+  NavbarLinkExtended
+} from "../components/styles/Navbar.styles";
 
 
 
-const NavbarContainer = styled.nav`
-width: 100%;
-height: 60px;
-background-color:${(props) => props.theme.colors.lightGray};
-font-family:${(props) => props.theme.fonts.heading};
-display: flex;
-flex-direction: column;
 
-`;
 
 
 function Navbarr(props) {
-
-  const linksMarkup = Links((link, index) => {
-
-    const linkMarkup = link.active ? (
-      <a className="nav-link nav-link-active" href={link.link}>{link.label}
-      </a>
-    ) : (<a className="nav-link " href={link.link}>{link.label}
-    </a>)
-
-    return (
-
-      <Link
-        activeClass="active"
-        to={link.label}
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}>
-
-        <li key={index} className="nav-item active">
-          {linkMarkup}
-        </li>
-      </Link>
-
-
-    );
-
-  });
-
+  const [extendNavbar, setExtendNavbar] = useState(false);
   return (
     <Theme>
-      <NavbarContainer>
+      <NavbarContainer extendNavbar={extendNavbar}>
+
+        <NavbarInnerContainer>
+          <LeftContainer>
+            <NavbarLinkContainer>
+              <NavbarLink to="/">Home</NavbarLink>
+              <NavbarLink to="/aboutme">About</NavbarLink>
+              <NavbarLink to="/works">Work</NavbarLink>
+              <NavbarLink to="/contact">Contact</NavbarLink>
+              <OpenLinkButton onClick={() => {
+                setExtendNavbar((curr) => !curr)
+              }}>{extendNavbar ? <>&#10005;</> : <>&#8801;</>}
+              </OpenLinkButton>
+            </NavbarLinkContainer>
+          </LeftContainer>
+          <RightContainer>
+            <a
+              Target="_blank"
+              title="Linkedin"
+              href="https://www.linkedin.com/in/juanballarino/">
+              <LinkedinLogo src={Lkdn}></LinkedinLogo>
+            </a>
+          </RightContainer>
+        </NavbarInnerContainer>
+        {extendNavbar && (
+          <NavbarExtendedContainer>
+            <NavbarLinkExtended to="/">Home</NavbarLinkExtended>
+            <NavbarLinkExtended to="/aboutme">About</NavbarLinkExtended>
+            <NavbarLinkExtended to="/works">Work</NavbarLinkExtended>
+            <NavbarLinkExtended to="/contact">Contact</NavbarLinkExtended>
+          </NavbarExtendedContainer>
+        )}
         <div className="row">
           <div>
 
           </div>
-          <Navbar className=" col-md-12 navigator ">
-            <Nav className="navbar-expand navbar-light ">
 
-
-              <div className="collapse navbar-collapse " id="navbarNavDropdown">
-
-                <ul className="navbar-nav">
-                  {linksMarkup}
-                </ul>
-
-                <section className="perfil" id="in"> <a
-                  Target="_blank"
-                  title="Linkedin"
-                  href="https://www.linkedin.com/in/juanballarino/"
-
-                >
-                  <img
-                    className="inicon"
-                    src={Lkdn}
-                    alt="Third slide"
-                    width="20px"
-                    height="20px"
-
-                  />
-
-                </a>
-                </section>
-
-
-              </div>
-            </Nav>
-          </Navbar>
         </div>
       </NavbarContainer>
     </Theme>

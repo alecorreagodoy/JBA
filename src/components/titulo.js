@@ -1,12 +1,12 @@
 import React from 'react';
-import Navbarr from './navbar';
+import { TitleContainer } from './styles/Title.styles';
 
 
 
 
 function Titulo() {
   return (
-    <div className="container">
+    <TitleContainer>
       <div className="row">
 
         <div className="titulo-page">
@@ -16,12 +16,12 @@ function Titulo() {
           <div className="col-sm sub-title">
             <h3>ARCHITECT </h3>
           </div>
-          <hr color="black" />
-          <Navbarr />
-          <hr color="black" />
+
+
+
         </div>
       </div>
-    </div>
+    </TitleContainer>
   );
 }
 
