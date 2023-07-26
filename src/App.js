@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import Contact from "./Pages/contact";
 import Navbarr from "./components/navbar";
+import { Helmet } from "react-helmet";
 
 
 import "./App.css"
@@ -18,6 +19,11 @@ function App() {
 
 
     <div className="App">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Juan Ballarino</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <Titulo />
       <BrowserRouter>
 
