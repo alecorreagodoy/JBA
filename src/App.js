@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import Contact from "./Pages/contact";
 import Navbarr from "./components/navbar";
-import { Helmet } from "react-helmet";
+
 
 
 import "./App.css"
@@ -25,14 +25,6 @@ function App() {
 
         <Navbarr />
         <hr color="black" />
-
-        {/* <Link className="nav-link active" to="/">Home</Link>
-        <Link className="nav-link active" to="/aboutme">About</Link>
-        <Link className="nav-link active" to="/works">Work</Link>
-        <Link className="nav-link active" to="/contact">contact</Link> */}
-
-
-
         <Routes>
 
           <Route path='/' element={<Body />} />
