@@ -21,12 +21,14 @@
 } */
 
 .titulo-page h1 {
-  padding: 10px;
+  padding-right: 80px;
+  padding-top: 20px;
   font-family: 'Montserrat', sans-serif;
   font-size: 50px;
   color: rgb(7, 7, 7);
   align-items: center;
   text-align: right;
+
 
 }
 
@@ -34,7 +36,8 @@
 .sub-title h3 {
   font-family: 'SpartanMB-Thin.oft';
   font-size: 30px;
-  padding: 5px;
+  padding: 10px;
+  padding-left: 80px;
   text-align: left;
 
 

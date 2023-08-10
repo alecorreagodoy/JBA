@@ -49,7 +49,7 @@ class Aboutme extends Component {
     }
     return (
       <Theme>
-        <div id="Aboutme" className="Section 1 container " >
+        <div id="Aboutme" className="Section 1 container card " >
           <Box>
             <Dialog
               title="About me"
