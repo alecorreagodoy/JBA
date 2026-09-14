@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 
+import JB_Page_010 from '../assets/portfolio/JB_Page_010.jpg';
 import JB_01 from '../assets/portfolio/JB_01.jpg';
 import JB_page0002 from '../assets/portfolio/JB_page0002.jpg';
 import JB_page0003 from '../assets/portfolio/JB_page0003.jpg';
@@ -17,7 +18,7 @@ import JB_page0009 from '../assets/portfolio/JB_page0009.jpg';
 
 
 function Works() {
-
+    const JB0 = JB_Page_010;
     const JB1 = JB_01;
     const JB2 = JB_page0002;
     const JB3 = JB_page0003;
@@ -33,6 +34,7 @@ function Works() {
                 <h2>Portfolio</h2>
                 <div>
                     <Card>
+                        <Card.Img variant="top" src={JB0} />
                         <Card.Img variant="top" src={JB1} />
                         <Card.Img variant="top" src={JB2} />
                         <Card.Img variant="top" src={JB3} />

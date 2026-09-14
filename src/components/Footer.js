@@ -12,7 +12,9 @@ function Footer() {
           <Card.Text>
 
           </Card.Text>
-          <Button variant="light">FlyCodeBcn.com</Button>
+          <Button variant="light" href="https://flycode.app" target="_blank">
+            FlyCode.app
+          </Button>
         </Card.Body>
       </Card>
     </div>
